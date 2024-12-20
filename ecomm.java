@@ -59,9 +59,13 @@ public static void main(String[] args) {
     System.out.println("Enter the target value: ");
     int target=sc.nextInt();
     List<List<Integer>> result=combinations(arr,target);
+    if(result.isEmpty()){
+        System.out.println("no result found");
+    }
+    else{
     for(List<Integer> i:result){
         System.out.println(i);
     }
-
+    }
 }
 }
